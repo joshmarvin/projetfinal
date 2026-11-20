@@ -1,0 +1,28 @@
+/*menu de la barre de navigation*/
+nav{
+    display: flex;
+    gap: 18px;
+}
+/*le lien vers les autres pages du hearder*/
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+/* la partie pour il aura un effet au passage de la souris*/
+nav a:hover{
+    color: #a7f3da ; ;
+}
+/*ici sera le header*/
+header{
+    background-color:#064E40 ;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*ici sera la partie logo*/
+.logo h2{
+    margin: 0;
+}
