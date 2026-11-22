@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
 /*menu de la barre de navigation*/
 nav{
     display: flex;
@@ -11,7 +16,7 @@ nav a {
 }
 /* la partie pour il aura un effet au passage de la souris*/
 nav a:hover{
-    color: #a7f3da ; ;
+    color: #a7f3da ; 
 }
 /*ici sera le header*/
 header{
@@ -26,3 +31,112 @@ header{
 .logo h2{
     margin: 0;
 }
+/**maintenat il sera question de gere la banniere d'accueil*/
+
+.banniere{
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.45),
+        rgba(0, 0, 0, 0.45)
+    ),url("image/fondecran.jpg");
+
+    background-size: cover;
+    background-position: center 15%;
+
+    min-height: 350px;
+
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+/** ici le titre principal */
+
+.contenu-banniere {
+    color: white;
+    max-width: 550px;
+}
+
+.contenu-banniere h2 {
+    font-size: 22px;
+   
+}
+/** on s'occupe maintenant du bouton**/
+.bouton {
+    display: inline-block;
+    background-color: #087B51;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 15px;
+}
+.bouton:hover {
+   background-color:#e05905 ;
+}
+/* je mattaque a la section frise evolutive*/
+.frise{
+    padding: 30px;
+    text-align: center;
+}
+.frise h2 {
+    color: #064E40;
+    font-size: 28px;
+}
+/* conteneur des cartes */
+.cartes-frise {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    margin-top: 25px;
+} 
+/* allons cartes par cartes*/
+
+
+.carte-plante {
+    background-color: #f0f8f4;
+    border-radius: 12px;
+    padding: 12px;
+    text-decoration: none;
+    color: #064E40;
+    transition: transform 0.3s;
+} 
+
+/* allons sue les images */
+
+
+.carte-plante img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+/* on s occupes maintenant des titres */
+
+.carte-plante h3 {
+    margin-bottom: 5px;
+}
+ 
+/* effect au passage de la souris */
+
+.carte-plante:hover img {
+    transform: scale(1.1) rotate(3deg);
+}
+/*le bouton retour*/
+
+.bouton-retour{
+    display: inline-block;
+    background-color:#064E40 ;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 20px;
+    text-decoration:none;
+}
+.bouton-retour:hover{
+    background-color: #087B51;
+}
+ 
+    .page-plante img {
+        width:100% ;
+        height: 100vh;
+        object-fit: cover;
+        display: block;
+    }
